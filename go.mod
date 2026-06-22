@@ -1,3 +1,3 @@
-module data_processor_553e3b
+module data_processor_c22dbd
 
 go 1.22
